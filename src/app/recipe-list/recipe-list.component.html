@@ -1,0 +1,20 @@
+<div class="mx-3 my-3">
+  <button class="btn btn-warning">New Recipe</button>
+</div>
+
+<hr class="hr">
+
+<div class="container mx-auto mt-4">
+  <div class="row">
+    <div class="col-md-3" *ngFor="let recipe of recipes">
+      <div class="card" style="width: 16rem;">
+        <img src="{{ recipe.imgpath }}" style="width: 254px; height: 190px;" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">{{ recipe.name }}</h5>
+          <p class="card-text">{{ recipe.desc }}</p>
+          <a href="#" class="btn btn-warning mr-2"><i class="fas fa-link"></i> View recipe</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
